@@ -92,7 +92,7 @@ useEffect(() => {
     }
   ];
 
-  const phoneNumber = "918667344556";  // add phone number here =======>
+  const phoneNumber = "9080504211";  // add phone number here =======>
 
   const addToCart = (item: any) => {
     const existing = cart.find((p) => p.name === item.name);
@@ -467,10 +467,20 @@ useEffect(() => {
       <div style={{ marginTop: "40px", textAlign: "center" }}>
         <h2>Visit Our Store📍</h2>
         <p style={{ color: "#aaa" }}>Anna Nagar, Chennai</p>
-        <a href="https://maps.app.goo.gl/g9ATHM8Mxmykot5G6" target="_blank" style={{ color: "#4CAF50" }}>
+        <a href="https://maps.app.goo.gl/g9ATHM8Mxmykot5G6" target="_blank" style={{ color: "#4CAF50", textDecoration: "underline" }}>
           Open in Google Maps
         </a>
       </div>
+
+      <p style={{ marginTop: "10px", textAlign: "center" }}>
+  <a
+    href="https://www.instagram.com/mentastic_chennai?igsh=MWNhaG41a29tMzdocw=="
+    target="_blank"
+    style={{ color: "#E1306C", textDecoration: "underline" }}
+  >
+    Follow us on Instagram 
+  </a>
+</p>
 
     </div>
   );
