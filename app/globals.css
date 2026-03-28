@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* 🌍 Theme variables */
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+
+  /* Brand vibes (Mentastic style 🔥) */
+  --card: #0a0a0a;
+  --border: #222222;
+}
+
+/* ⚡ Tailwind v4 theme mapping */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+
+  /* Optional fonts */
+  --font-sans: system-ui, sans-serif;
+  --font-mono: monospace;
+}
+
+/* 🌙 Dark mode auto-adjust (optional tweak) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+}
+
+/* 🧱 Base styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* ✨ Reusable components (non-Tailwind fallback or mix usage) */
+.product-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  background: var(--card);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.cart-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+  background: var(--card);
+  text-align: center;
+}
+
+
+
+.banner-track span {
+  white-space: nowrap;
+  padding-right: 50px;
+  font-weight: bold;
+  color: white;
+}
+
